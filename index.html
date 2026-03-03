@@ -6,48 +6,47 @@
     <title>सोनू सरगम - उलझा शायर ए सरगम | Official Gallery</title>
     <style>
         body { text-align: center; font-family: sans-serif; background-color: #f0f2f5; padding: 20px; margin: 0; }
-        h1 { color: #1a1a1a; margin-top: 20px; }
-        .subtitle { color: #555; margin-bottom: 30px; font-weight: bold; }
         .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
         .card { background: white; padding: 15px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        img { width: 100%; border-radius: 10px; margin-bottom: 15px; border: 1px solid #eee; }
-        .dl-btn { background-color: #28a745; color: white; padding: 12px; text-decoration: none; border-radius: 8px; display: block; font-weight: bold; font-size: 1rem; transition: 0.3s; }
-        .dl-btn:hover { background-color: #218838; }
-        .counter-box { margin-top: 50px; padding: 20px; background: white; display: inline-block; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+        .poetry-text { font-style: italic; color: #333; margin-bottom: 15px; font-size: 1.1rem; }
+        .dl-btn { background-color: #28a745; color: white; padding: 12px; text-decoration: none; border-radius: 8px; display: block; font-weight: bold; }
+        .comment-section { max-width: 800px; margin: 50px auto; background: white; padding: 20px; border-radius: 15px; text-align: left; }
     </style>
 </head>
 <body>
 
     <h1>सोनू सरगम (Sonu Sargam)</h1>
-    <p class="subtitle">उलझा शायर ए सरगम - शायरी गैलरी</p>
+    <p><b>उलझा शायर ए सरगम</b> - शायरी गैलरी</p>
 
     <div class="gallery">
-        <div class="card">
-            <img src="uljhashayarsargam.jpg">
-            <a href="uljhashayarsargam.jpg" download class="dl-btn">Save Photo</a>
-        </div>
-        <div class="card">
-            <img src="20260207_004124.jpg">
-            <a href="20260207_004124.jpg" download class="dl-btn">Save Photo</a>
-        </div>
-        <div class="card">
-            <img src="20260213_075129.jpg">
-            <a href="20260213_075129.jpg" download class="dl-btn">Save Photo</a>
-        </div>
-        <div class="card">
-            <img src="20260206_095727.jpg">
-            <a href="20260206_095727.jpg" download class="dl-btn">Save Photo</a>
-        </div>
+        <div class="card"><img src="uljhashayarsargam.jpg"><p class="poetry-text">"जो आज है वो कल नहीं रहता..."</p><a href="uljhashayarsargam.jpg" download class="dl-btn">Save Photo</a></div>
+        <div class="card"><img src="20260213_075129.jpg"><p class="poetry-text">"रोज बचकर निकलता हूं..."</p><a href="20260213_075129.jpg" download class="dl-btn">Save Photo</a></div>
+        <div class="card"><img src="20260207_004124.jpg"><p class="poetry-text">"कुछ तो खताएं होंगी मेरी!..."</p><a href="20260207_004124.jpg" download class="dl-btn">Save Photo</a></div>
+        <div class="card"><img src="20260206_095727.jpg"><p class="poetry-text">"मेरे हाल में रहने दे..."</p><a href="20260206_095727.jpg" download class="dl-btn">Save Photo</a></div>
     </div>
 
-    <div class="counter-box">
-        <p style="margin: 0 0 10px 0; color: #777;">कुल प्रशंसक (Total Visitors)</p>
-        <img src="https://profile-counter.glitch.me/uljha-shayar-sargam/count.svg" alt="Visitor Count">
+    <div class="comment-section">
+        <h3>अपनी राय दें (Comments):</h3>
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = window.location.href;
+                this.page.identifier = 'uljha-shayar-sargam';
+            };
+            (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://uljha-shayar-sargam.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
     </div>
 
-    <footer style="margin-top: 40px; padding: 20px; color: #999; font-size: 0.8rem;">
-        © 2026 सोनू सरगम | सभी शायरी सुरक्षित हैं
-    </footer>
+    <div style="margin-top: 30px;">
+        <p style="color: #777;">कुल प्रशंसक (Total Visitors)</p>
+        <img src="https://profile-counter.glitch.me/sonu-sargam-poetry/count.svg" alt="Visitor Count">
+    </div>
 
 </body>
 </html>
